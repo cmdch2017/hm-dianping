@@ -1,7 +1,10 @@
 package com.hmdp.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.hmdp.entity.ShopType;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,6 @@ import com.hmdp.entity.ShopType;
  */
 public interface IShopTypeService extends IService<ShopType> {
 
+
+    List<ShopType> queryAllType() throws JsonProcessingException;
 }
